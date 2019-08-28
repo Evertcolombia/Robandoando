@@ -464,15 +464,13 @@
                 <div class="top_bar_left clearfix" style="width: 1196px;">
                   <div class="logo">
                     <a id="logo" href="https://coloramacomunicaciones.com" title="Colorama Agencia">
-
-                      <!-- Aqui va el logo -->
-
+                     <!--Aqui va el logo-->
                     </a>
                   </div>
                   <div class="menu_wrapper">
                     <nav id="menu" class="menu-principal-container">
                       <ul id="menu-principal" class="menu">
-                        <li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item"><a href="#index.html">
+                        <li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item"><a href="index.html">
                           <span>Inicio</span>
                         </a>
                       </li>
@@ -488,7 +486,7 @@
                       <span class="menu-toggle"></span>
                     </li>
                     <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children submenu">
-                      <a href="dweb.html">
+                      <a href="#dweb.html">
                         <span>Desarrollo Web</span>
                       </a>
                       <span class="menu-toggle"></span>
@@ -529,621 +527,336 @@
       <div class="sections_group">
         <div class="entry-content" itemprop="mainContentOfPage">
           <div class="section the_content has_content" style="margin-top: 50px !important;">
-           
-           <!-- Slideshow--> 
-            <style type="text/css">
-            *{box-sizing: border-box; -webkit-box-sizing: border-box; }
-            html, body { height: 100%; }
-            body { margin: 0; font: 16px/1.3 sans-serif; }
-            /*
-            PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
-            http://stackoverflow.com/a/34696029/383904
-            */
-            .CSSgal {
-            position: relative;
-            overflow: hidden;
-            height: 100%; /* Or set a fixed height */
-            }
-            /* SLIDER */
-            .CSSgal .slider {
-            height: 100%;
-            white-space: nowrap;
-            font-size: 0;
-            transition: 0.8s;
-            }
-            /* SLIDES */
-            .CSSgal .slider > * {
-            font-size: 1rem;
-            display: inline-block;
-            white-space: normal;
-            vertical-align: top;
-            height: 100%;
-            width: 100%;
-            background: none 50% no-repeat;
-            background-size: cover;
-            }
-            /* PREV/NEXT, CONTAINERS & ANCHORS */
-            .CSSgal .prevNext {
-            position: absolute;
-            z-index: 1;
-            top: 50%;
-            width: 100%;
-            height: 0;
-            }
-            .CSSgal .prevNext > div+div {
-            visibility: hidden; /* Hide all but first P/N container */
-            }
-            .CSSgal .prevNext a {
-            background: #fff;
-            position: absolute;
-            width:       60px;
-            height:      60px;
-            line-height: 60px; /* If you want to place numbers */
-            text-align: center;
-            opacity: 0.7;
-            -webkit-transition: 0.3s;
-            transition: 0.3s;
-            -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-            left: 0;
-            }
-            .CSSgal .prevNext a:hover {
-            opacity: 1;
-            }
-            .CSSgal .prevNext a+a {
-            left: auto;
-            right: 0;
-            }
-            /* NAVIGATION */
-            .CSSgal .bullets {
-            position: absolute;
-            z-index: 2;
-            bottom: 0;
-            padding: 10px 0;
-            width: 100%;
-            text-align: center;
-            }
-            .CSSgal .bullets > a {
-            display: inline-block;
-            width:       30px;
-            height:      30px;
-            line-height: 30px;
-            text-decoration: none;
-            text-align: center;
-            background: rgba(255, 255, 255, 1);
-            -webkit-transition: 0.3s;
-            transition: 0.3s;
-            }
-            .CSSgal .bullets > a+a {
-            background: rgba(255, 255, 255, 0.5); /* Dim all but first */
-            }
-            .CSSgal .bullets > a:hover {
-            background: rgba(255, 255, 255, 0.7) !important;
-            }
-            /* NAVIGATION BUTTONS */
-            /* ALL: */
-            .CSSgal >s:target ~ .bullets >* {      background: rgba(255, 255, 255, 0.5);}
-            /* ACTIVE */
-            #s1:target ~ .bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
-            #s2:target ~ .bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
-            #s3:target ~ .bullets >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
-            #s4:target ~ .bullets >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
-            /* More slides? Add here more rules */
-            /* PREV/NEXT CONTAINERS VISIBILITY */
-            /* ALL: */
-            .CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
-            /* ACTIVE: */
-            #s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
-            #s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
-            #s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
-            #s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
-            /* More slides? Add here more rules */
-            /* SLIDER ANIMATION POSITIONS */
-            #s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
-            #s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
-            #s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
-            #s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
-            /* More slides? Add here more rules */
-            /* YOU'RE THE DESIGNER!
-            ____________________
-            All above was mainly to get it working :)
-            CSSgal CUSTOM STYLES / OVERRIDES HERE: */
-            .CSSgal{
-            color: #fff;
-            text-align: center;
-            margin-bottom: 50px !important;
-            }
-            .CSSgal .slider h2 {
-            margin-top: 40vh;
-            font-weight: 200;
-            letter-spacing: -0.06em;
-            word-spacing: 0.2em;
-            font-size: 3em;
-            }
-            .CSSgal a {
-            border-radius: 50%;
-            margin: 0 3px;
-            color: rgba(0,0,0,0.8);
-            text-decoration: none;
-            }
-            .CSSgal .slider > .fbits {
-            background: url("https://recursos.release.ecommercestore.com.br//Banner/2016/7/7/db646ef8-113f-43e3-b0c9-415ee1398e88.jpg");
-            background-size:contain;
-            background-position: center;
-            background-repeat:no-repeat;
             
-            }
-            </style>
-            <div class="CSSgal">
-              <!-- Don't wrap targets in parent -->
-              <s id="s1"></s>
-              <s id="s2"></s>
-              <s id="s3"></s>
-              <s id="s4"></s>
-              <div class="slider">
-                <div style="background:#5b8;">
-                  <h2>PURE <b>CSS</b> SLIDESHOW</h2>
-                  <p>Responsive Slideshow Gallery created using CSS only<br>by Roko</p>
-                </div>
-                <div  class="fbits">
-                  <h2>Slide 2</h2>
-                </div>
-                <div style="background:#e95;">
-                  <h2>Slide 3</h2>
-                </div>
-                <div style="background:#e59;">
-                  <h2>Slide 4</h2>
-                </div>
-              </div>
-              
-              <div class="prevNext">
-                <div><a href="#s4"></a><a href="#s2"></a></div>
-                <div><a href="#s1"></a><a href="#s3"></a></div>
-                <div><a href="#s2"></a><a href="#s4"></a></div>
-                <div><a href="#s3"></a><a href="#s1"></a></div>
-              </div>
-              <div class="bullets">
-                <a href="#s1">1</a>
-                <a href="#s2">2</a>
-                <a href="#s3">3</a>
-                <a href="#s4">4</a>
-              </div>
-            </div>
-          <!---->
-            
-            <div class="section_wrapper">
-              <div class="vc_row-full-width vc_clearfix">
-              </div>
-
-              <!-- We are-->
-              <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid">
-                <div class="wpb_column vc_column_container vc_col-sm-12">
-                  <div class="vc_column-inner ">
-                    <div class="wpb_wrapper">
-                      <h2 style="color: #000000; text-align: center; " class="vc_custom_heading">CONOCE NUESTROS PLANES</h2>
-                      <div class="vc_empty_space" style="height: 12px">
-                        <span class="vc_empty_space_inner">
-                        </span>
-                      </div>
-                      
-                      <div class="vc_row wpb_row vc_inner vc_row-fluid">
-                        <div class="wpb_column vc_column_container vc_col-sm-6">
-                          <div class="vc_column-inner ">
-                            <div class="wpb_wrapper">
-                              <div class="icon_box icon_position_left no_border">
-                                <div class="image_wrapper">
-                                  <img src="https://coloramacomunicaciones.com/wp-content/uploads/2019/01/1icono-lo-mejor-de-lo-mejor.png" class="scale-with-grid" alt="" width="100" height="100" />
-                                </div>
-                                <div class="desc_wrapper">
-                                  <h4 class="title">
-                                  Lo mejor de lo mejor</h4>
-                                  <div class="desc">
-                                    Colorama ha reunido en 10 años un solido equipo de<br />
+            <!--Principal Content-->
+            <div id="web" data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1546612588867 vc_row-has-fill vc_row-o-full-height vc_row-o-columns-middle vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
+                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                      <div class="vc_column-inner ">
+                        <div class="wpb_wrapper">
+                          <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                            <div class="wpb_column vc_column_container vc_col-sm-4">
+                              <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                  
+                                  <div class="wpb_single_image wpb_content_element vc_align_center">
                                     
-                                    profesionales para cada departamento. Esta compuesto por<br />
+                                    <figure class="wpb_wrapper vc_figure">
+                                      
+                                      <div class="vc_single_image-wrapper   vc_box_border_grey">
+                                        <img width="282" height="150" src="https://coloramacomunicaciones.com/wp-content/uploads/2019/01/Icono-Desarrollo-web-1.png" class="vc_single_image-img attachment-full" alt="Colorama Agencia Paginas Web Tiendas Online" srcset="https://coloramacomunicaciones.com/wp-content/uploads/2019/01/Icono-Desarrollo-web-1.png 282w, https://coloramacomunicaciones.com/wp-content/uploads/2019/01/Icono-Desarrollo-web-1-260x138.png 260w, https://coloramacomunicaciones.com/wp-content/uploads/2019/01/Icono-Desarrollo-web-1-50x27.png 50w, https://coloramacomunicaciones.com/wp-content/uploads/2019/01/Icono-Desarrollo-web-1-141x75.png 141w" sizes="(max-width: 282px) 100vw, 282px" />
+                                      </div>
+                                      
+                                    </figure>
                                     
-                                    diseñadores, comunicadores sociales, desarrolladores y asesores<br />
+                                  </div>
+                                  
+                                  <div class="wpb_text_column wpb_content_element ">
                                     
-                                  dispuestos a garantizar los resultados de su marca.</div>
-                                </div>
-                              </div>
-                              
-                              <div class="icon_box icon_position_left no_border">
-                                <div class="image_wrapper">
-                                  <img src="https://coloramacomunicaciones.com/wp-content/uploads/2019/01/2-icono-soporte-y-atencion.png" class="scale-with-grid" alt="" width="100" height="100" />
-                                </div>
-                                <div class="desc_wrapper">
-                                  <h4 class="title">
-                                  Soporte y atención al cliente</h4>
-                                  <div class="desc">
-                                    Nuestros clientes son lo más importante. Atendemos todas sus<br />
-                                    
-                                    inquietudes antes de adquirir un servicio y brindamos todo el<br />
-                                    
-                                  soporte postventa garantizandole la mejor calidad y metas a su marca.</div>
-                                </div>
-                              </div>
-                              
-                            </div>
-                          </div>
-                        </div>
-                        <div class="wpb_column vc_column_container vc_col-sm-6">
-                          <div class="vc_column-inner ">
-                            <div class="wpb_wrapper">
-                              <div class="icon_box icon_position_left no_border">
-                                <div class="image_wrapper">
-                                  <img src="https://coloramacomunicaciones.com/wp-content/uploads/2019/01/3-icono-seguridad-y-resultados.png" class="scale-with-grid" alt="" width="100" height="100" />
-                                </div>
-                                <div class="desc_wrapper">
-                                  <h4 class="title">
-                                  Seguridad y resultados garantizados</h4>
-                                  <div class="desc">
-                                    Somos unas de las pocas agencias en el mundo que garantiza<br />
-                                    resultados. Desarrollamos un plan estratégico que funcione<br />
-                                    acorde a los servicios o productos que ofrece su marca para<br />
-                                  obtener los resultados pactados.</div>
-                                </div>
-                              </div>
-                              <div class="icon_box icon_position_left no_border">
-                                <div class="image_wrapper">
-                                  <img src="https://coloramacomunicaciones.com/wp-content/uploads/2019/01/4-mejores-tiempos.png" class="scale-with-grid" alt="4-mejores-tiempos" width="100" height="100" />
-                                </div>
-                                <div class="desc_wrapper">
-                                  <h4 class="title">
-                                  Mejores tiempos de ejecución</h4>
-                                  <div class="desc">
-                                    El tiempo no se detiene y nosotros tampoco. Trabajamos para<br />
-                                    
-                                    que las metas se cumplan segun lo establecido manteniendo la<br />
-                                  calidad y un buen servicio.</div>
-                                </div>
-                              </div>
-                              
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--  -->
-
-               <!--Cards Section -->
-              <div class="the_content_wrapper">
-                <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
-                  <div class="wpb_column vc_column_container vc_col-sm-12">
-                    <div class="vc_column-inner ">
-                      <div class="wpb_wrapper">
-                        <h2 style="color: #000000; text-align: center; " class="vc_custom_heading">CONOCE NUESTROS PLANES</h2>
-                        <div class="vc_empty_space" style="height: 8px">
-                          <span class="vc_empty_space_inner"></span>
-                        </div>
-                        <div class="vc_row wpb_row vc_inner vc_row-fluid vc_column-gap-15 vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
-                          <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill">
-                            <div class="vc_column-inner vc_custom_1546562578732 cards">
-                              <div class="wpb_wrapper">
-                                <h6 style="color: #000000;text-align: left" class="vc_custom_heading">FACTURACIÓN/ MENSUAL</h6>
-                                <h2 style="color: #000000;text-align: left" class="vc_custom_heading">MARKETING<br />
-                                <b>DIGITAL</b>
-                                </h2>
-                                <div class="wpb_single_image wpb_content_element vc_align_center">
-                                  <figure class="wpb_wrapper vc_figure">
-                                    <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                      <img width="95%" height="736" src="https://fangdigital.com/wp-content/uploads/2013/05/digital-marketing-training-in-bangalore-1200x600.png" class="vc_single_image-img attachment-full" alt="" sizes="(max-width: 1245px) 100vw, 1245px" />
+                                    <div class="wpb_wrapper">
+                                      
+                                      <h3>
+                                      <span style="color: #ffffff;">
+                                        <a class="prettyphoto" style="color: #ffffff;" href="https://www.youtube.com/watch?v=BJ7xjoackVc">
+                                        Ver Testimonios </a>
+                                        | <a class="prettyphoto" style="color: #ffffff;" href="https://www.youtube.com/watch?v=IgWZ0EsO4uA">
+                                        ¿Cómo Funciona?</a>
+                                      </span>
+                                      </h3>
+                                      
                                     </div>
-                                  </figure>
+                                    
+                                  </div>
+                                  
                                 </div>
-                                <p style="color: #000000;text-align: left" class="vc_custom_heading">El social media y el uso de internet hacen que su audiencia pueda emitir juicios y crear un tema viral alrededor de su empresa sin necesidad que haga presencia digital; su reputación, con el uso correcto de herramientas digitales se convierten en un arma infalible para fidelizar clientes.</p>
-                                <div class="vc_btn3-container vc_btn3-center">
-                                  <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-outline vc_btn3-icon-left vc_btn3-color-white" style="" href="https://coloramacomunicaciones.com/registro-completo/" title=""><i class="vc_btn3-icon fa fa-star"></i>  Descubrir mas  </a>
+                              </div>
+                            </div>
+                            <div class="wpb_column vc_column_container vc_col-sm-4">
+                              <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                  <h1 style="color: #000000;text-align: left" class="vc_custom_heading">
+                                  DESARROLLO</h1>
+                                  <h1 style="color: #000000;text-align: left" class="vc_custom_heading">
+                                  <b>
+                                  PÁGINAS WEB</b>
+                                  </h1>
+                                  <p style="color: #000000;text-align: left" class="vc_custom_heading">
+                                    Tener un aliado que trabaja por ti 24 horas al día, los 7 días a la semana y cada día del año, es una razón especialmente relevante para pensar en tener un sitio web. Nosotros nos encargamos del diseño y desarrollo de tu página web.<br />
+                                    
+                                    Prácticamente es la conexión con el mundo, ahora te podrán encontrar en internet y de acá se derivan oportunidades de negocio que puedes aprovechar.<br />
+                                  Finalmente, contar con buena presencia en la web, probablemente ayude al crecimiento de tu empresa.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="wpb_column vc_column_container vc_col-sm-3">
+                              <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                  <p style="color: #000000;text-align: center" class="vc_custom_heading">
+                                    ¿Tienes dudas?<br />
+                                  Obtén asesoría personalizada</p>
+                                  
+                                  <div class="wpb_text_column wpb_content_element ">
+                                    
+                                    <div class="wpb_wrapper">
+                                      
+                                      <p style="text-align: center;">
+                                        <script type="text/javascript" src="https://app.getresponse.com/view_webform_v2.js?u=Sjfa6&amp;webforms_id=18641905">
+                                        </script>
+                                      </p>
+                                      
+                                    </div>
+                                    
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                          <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill">
-                            <div class="vc_column-inner vc_custom_1546562570004">
-                              <div class="wpb_wrapper">
-                                <h6 style="color: #000000;text-align: left" class="vc_custom_heading">FACTURACIÓN / MENSUAL</h6>
-                                <h2 style="color: #000000;text-align: left" class="vc_custom_heading">ASESORIA<br />
-                                <b>ESTUDIOS WEBCAM</b></h2>
-                                <div class="wpb_single_image wpb_content_element vc_align_center">
-                                  <figure class="wpb_wrapper vc_figure">
-                                    <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                      <img width="72%" height="80%" src="https://www.modeloswebcambogota.com/wp-content/uploads/2017/12/LOGO_OK-white.png" class="vc_single_image-img attachment-full" alt="marketing de resultados Colorama Agencia" />
+                          <div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_sep_color_black plan-divisor vc_separator-has-text">
+                            <span class="vc_sep_holder vc_sep_holder_l">
+                              <span class="vc_sep_line">
+                              </span>
+                            </span>
+                            <h4>
+                            TIPO DE PAGINAS</h4>
+                            <span class="vc_sep_holder vc_sep_holder_r">
+                              <span class="vc_sep_line">
+                              </span>
+                            </span>
+                            
+                          </div>
+                          <div class="vc_row wpb_row vc_inner vc_row-fluid vc_column-gap-10 vc_row-o-equal-height vc_row-flex">
+                            <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill">
+                              <div class="vc_column-inner vc_custom_1524605706457">
+                                <div class="wpb_wrapper">
+                                  <h3 style="color: #ffffff;text-align: left" class="vc_custom_heading vc_custom_1524842712394">
+                                  PÁGINA WEB<br />
+                                  <b>
+                                  PREMIUM</b>
+                                  </h3>
+                                  <div class="wpb_text_column wpb_content_element  vc_custom_1523994634618">
+                                    
+                                    <div class="wpb_wrapper">
+                                      
+                                      <ul>
+                                        <li>
+                                        Diseño Personalizado.</li>
+                                        <li>
+                                        Página Web Administrable e incluir roles de usuarios.</li>
+                                        
+                                        <li>
+                                        Blog de Noticias</li>
+                                        <li>
+                                        Capacitación Web</li>
+                                        
+                                        <li>
+                                        Soporte permanente por 1 año.</li>
+                                        <li>
+                                        Funcional, Análisis Operativo, Llamados a la Acción.</li>
+                                        <li>
+                                        Máximo 15 páginas internas, incluye Registros, Formulario de Contactos, Catálogo de Productos, Mapas, etc. Diseño Corporativo y Simétrico basado en la función.</li>
+                                        
+                                        <li>
+                                        Adaptación a Dispositivos Móviles.</li>
+                                        <li>
+                                        Incluye hosting y dominio. (1 año).</li>
+                                        
+                                        <li>
+                                        Tiempo de entrega: 30 días</li>
+                                        
+                                      </ul>
+                                      
                                     </div>
-                                  </figure>
-                                </div>
-                                <p style="color: #000000;text-align: left" class="vc_custom_heading">Es la ejecución de una estrategia digital para cumplir unos objetivos y obtener un retorno a la inversión (ROI).<br />
-                                Antes de todo debemos difinir los KPIS y el uso de variadas herramientas que nos ayudan a ejecutar estrategias exitosas.</p>
-                                <div class="vc_btn3-container vc_btn3-center">
-                                  <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-outline vc_btn3-icon-left vc_btn3-color-white" href="https://coloramacomunicaciones.com/registro-completo/" title="">
-                                  <i class="vc_btn3-icon fa fa-star"></i>  Descubrir mas  </a>
+                                    
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill">
-                            <div class="vc_column-inner vc_custom_1546562560534">
-                              <div class="wpb_wrapper">
-                                <h6 style="color: #000000;text-align: left" class="vc_custom_heading"> ANUAL</h6>
-                                <h2 style="color: #000000;text-align: left" class="vc_custom_heading">DESARROLLO<br />
-                                <b>PÁGINAS WEB</b></h2>
-                                <div class="wpb_single_image wpb_content_element vc_align_center">
-                                  <figure class="wpb_wrapper vc_figure">
-                                    <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                      <img width="98%" height="649" src="https://miro.medium.com/max/1022/1*EpK0I3mJK9Dnik43_ss_NQ.png" class="vc_single_image-img attachment-full" alt="Paginas web,seo y tiendas virtuales colorama agencia" sizes="(max-width: 1200px) 100vw, 1200px" />
+                            <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill">
+                              <div class="vc_column-inner vc_custom_1524605699846">
+                                <div class="wpb_wrapper">
+                                  <h3 style="color: #ffffff;text-align: left" class="vc_custom_heading vc_custom_1524842718712">
+                                  TIENDA ONLINE<br />
+                                  
+                                  <b>
+                                  E-COMMERCE</b>
+                                  </h3>
+                                  <div class="wpb_text_column wpb_content_element  vc_custom_1523994832340">
+                                    <div class="wpb_wrapper">
+                                      <ul>
+                                        <li>
+                                        Diseño personalizado</li>
+                                        <li>
+                                        Página web administrable e incluir roles de usuarios.</li>
+                                        
+                                        <li>
+                                        Asesoría y capacitación de administración del sitio web</li>
+                                        
+                                        <li>
+                                        Blog de Noticias</li>
+                                        <li>
+                                        Capacitación Web</li>
+                                        
+                                        <li>
+                                        Soporte permanente por 1 año</li>
+                                        <li>
+                                        Funcional, Análisis Operativo, Llamados a la Acción.</li>
+                                        
+                                        <li>
+                                        Incluye Asesoría en formas de pago e integración Sistema de Pagos.</li>
+                                        
+                                        <li>
+                                        Carro de Compra hasta 30 productos o referencias. Para resto de productos se capacitará para incluirlos . No incluye toma de fotografías, categorización de productos.</li>
+                                        
+                                        <li>
+                                        La agilidad de los trámites depende de la prontitud con que el cliente suministre información.</li>
+                                        
+                                        <li>
+                                        Incluye hosting y dominio. (1 año)</li>
+                                        
+                                        <li>
+                                        Tiempo de entrega: 60 días</li>
+                                        
+                                      </ul>
                                     </div>
-                                  </figure>
+                                    
+                                  </div>
+                                  
                                 </div>
-                                <p style="color: #000000;text-align: left" class="vc_custom_heading">Tener un aliado que trabaja por ti 24 horas al día, los 7 días a la semana y cada día del año, es una razón especialmente relevante para pensar en tener páginas web.<br />
-                                Nosotros nos encargamos del diseño y desarrollo de tu sitio web.</p>
-                                
-                                <div class="vc_btn3-container vc_btn3-center">
-                                  <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-outline vc_btn3-icon-left vc_btn3-color-white" href="https://coloramacomunicaciones.com/registro-completo/" title=""><i class="vc_btn3-icon fa fa-star"></i>  Descubrir mas  </a>
-                                </div>
-                                
                               </div>
                             </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!---->
-
-
-              
-              <!--This part-->
-              <div class="vc_row-full-width vc_clearfix">
-              </div>
-              <div class="vc_row wpb_row vc_row-fluid">
-                <div class="wpb_column vc_column_container vc_col-sm-12">
-                  <div class="vc_column-inner ">
-                    <div class="wpb_wrapper">
-                      <div class="vc_row wpb_row vc_inner vc_row-fluid">
-                        <div class="wpb_column vc_column_container vc_col-sm-12">
-                          <div class="vc_column-inner ">
-                            <div class="wpb_wrapper">
-                              <h3 style="text-align: center" class="vc_custom_heading">
-                              Empresas que confiaron en <b>
-                              nosotros</b>
-                              </h3>
-                              <p style="text-align: center" class="vc_custom_heading">
-                                para competir en el <b>
-                                mercado y posicionar digitalmente</b>
-                              su marca. </p>
-                              <div class="clients_slider">
-                                <div class="clients_slider_header">
+                            <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill">
+                              <div class="vc_column-inner vc_custom_1524605712970">
+                                <div class="wpb_wrapper">
+                                  <h3 style="color: #ffffff;text-align: left" class="vc_custom_heading vc_custom_1524842724609">
+                                  LANDING<br />
+                                  <b>
+                                  PAGES</b>
+                                  </h3>
+                                  
+                                  <div class="wpb_text_column wpb_content_element  vc_custom_1523995320462">
+                                    <div class="wpb_wrapper">
+                                      <p>
+                                        Las landing pages (o páginas de aterrizaje) son páginas web a las que llegarán los usuarios al hacer clic en un link de una publicación o de en un anuncio en concreto.<br />
+                                        Las landing pages tienen una función principal, que es la captación de clientes online.<br />
+                                      Aun así, se pueden crear con otros fines entre los cuales destacan:</p>
+                                      
+                                      <ul>
+                                        <li>
+                                        Conseguir suscriptores</li>
+                                        
+                                        <li>
+                                        Ventas de afiliados</li>
+                                        
+                                        <li>
+                                        Conseguir que contacten contigo</li>
+                                        
+                                        <li>
+                                        Vender algún producto o servicio</li>
+                                        <li>
+                                        Conseguir leads</li>
+                                        
+                                        <li>
+                                        Conseguir seguidores y que compartan tu página en las redes sociales</li>
+                                        
+                                        <li>
+                                        Visualizaciones de vídeos</li>
+                                      </ul>
+                                      
+                                    </div>
+                                  </div>
+                                  
                                 </div>
-                                <ul class="clients clients_slider_ul">
-                                  <li>
-                                    <div class="client_wrapper">
-                                      <a target="_blank" href="https://veiu.com.co" title="Veiu Calzado">
-                                        <img width="150" height="74" src="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/veiu-150x74.png" class="scale-with-grid wp-post-image" alt="Clientes colorama agencia" srcset="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/veiu.png 150w, https://coloramacomunicaciones.com/wp-content/uploads/2018/05/veiu-50x25.png 50w" sizes="(max-width: 150px) 100vw, 150px" />
-                                      </a>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="client_wrapper">
-                                      <a target="_blank" href="https://mussi.com.co" title="Mussi Zapatos">
-                                        <img width="150" height="74" src="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/mussi-150x74.png" class="scale-with-grid wp-post-image" alt="Clientes colorama agencia" srcset="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/mussi.png 150w, https://coloramacomunicaciones.com/wp-content/uploads/2018/05/mussi-50x25.png 50w" sizes="(max-width: 150px) 100vw, 150px" />
-                                      </a>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="client_wrapper">
-                                      <img width="90" height="75" src="https://coloramacomunicaciones.com/wp-content/uploads/2018/07/cafe-sebas-90x75.png" class="scale-with-grid wp-post-image" alt="" srcset="https://coloramacomunicaciones.com/wp-content/uploads/2018/07/cafe-sebas-90x75.png 90w, https://coloramacomunicaciones.com/wp-content/uploads/2018/07/cafe-sebas-176x146.png 176w, https://coloramacomunicaciones.com/wp-content/uploads/2018/07/cafe-sebas-50x42.png 50w, https://coloramacomunicaciones.com/wp-content/uploads/2018/07/cafe-sebas.png 206w" sizes="(max-width: 90px) 100vw, 90px" />
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="client_wrapper">
-                                      <a target="_blank" href="https://cioinmobiliaria.com" title="CIO Inmobiliaria">
-                                        <img width="150" height="74" src="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/cio-150x74.png" class="scale-with-grid wp-post-image" alt="Clientes colorama agencia" srcset="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/cio.png 150w, https://coloramacomunicaciones.com/wp-content/uploads/2018/05/cio-50x25.png 50w" sizes="(max-width: 150px) 100vw, 150px" />
-                                      </a>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="client_wrapper">
-                                      <a target="_blank" href="http://constructoramonape.com" title="Constructora Monape">
-                                        <img width="150" height="74" src="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/monape-150x74.png" class="scale-with-grid wp-post-image" alt="Clientes colorama agencia" srcset="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/monape.png 150w, https://coloramacomunicaciones.com/wp-content/uploads/2018/05/monape-50x25.png 50w" sizes="(max-width: 150px) 100vw, 150px" />
-                                      </a>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="client_wrapper">
-                                      <a target="_blank" href="http:comecarnes.com" title="ComeCarnes Cúcuta">
-                                        <img width="150" height="74" src="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/comecarnes-150x74.png" class="scale-with-grid wp-post-image" alt="Clientes colorama agencia" srcset="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/comecarnes.png 150w, https://coloramacomunicaciones.com/wp-content/uploads/2018/05/comecarnes-50x25.png 50w" sizes="(max-width: 150px) 100vw, 150px" />
-                                      </a>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="client_wrapper">
-                                      <a target="_blank" href="https://valexs.com" title="Tenis Valexs">
-                                        <img width="150" height="73" src="https://coloramacomunicaciones.com/wp-content/uploads/2018/10/Logo-VALEXS-150x73.jpg" class="scale-with-grid wp-post-image" alt="" srcset="https://coloramacomunicaciones.com/wp-content/uploads/2018/10/Logo-VALEXS.jpg 150w, https://coloramacomunicaciones.com/wp-content/uploads/2018/10/Logo-VALEXS-50x24.jpg 50w" sizes="(max-width: 150px) 100vw, 150px" />
-                                      </a>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="client_wrapper">
-                                      <a target="_blank" href="http://constructorayadel.com.co" title="Constructora Yadel">
-                                        <img width="150" height="74" src="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/yadel-150x74.png" class="scale-with-grid wp-post-image" alt="Clientes colorama agencia" srcset="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/yadel.png 150w, https://coloramacomunicaciones.com/wp-content/uploads/2018/05/yadel-50x25.png 50w" sizes="(max-width: 150px) 100vw, 150px" />
-                                      </a>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="client_wrapper">
-                                      <a target="_blank" href="https://yogastore.com.co" title="Yoga Store">
-                                        <img width="150" height="74" src="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/yogastore-150x74.png" class="scale-with-grid wp-post-image" alt="Clientes Colorama Agencia de publicidad" srcset="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/yogastore.png 150w, https://coloramacomunicaciones.com/wp-content/uploads/2018/05/yogastore-50x25.png 50w" sizes="(max-width: 150px) 100vw, 150px" />
-                                      </a>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="client_wrapper">
-                                      <a target="_blank" href="http://aikaco.com" title="Aika Talento Productivo">
-                                        <img width="150" height="74" src="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/aika-150x74.png" class="scale-with-grid wp-post-image" alt="Clientes colorama agencia" srcset="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/aika.png 150w, https://coloramacomunicaciones.com/wp-content/uploads/2018/05/aika-50x25.png 50w" sizes="(max-width: 150px) 100vw, 150px" />
-                                      </a>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="client_wrapper">
-                                      <a target="_blank" href="https://fianzacreditocucuta.com" title="Fianza Crédito Cúcuta">
-                                        <img width="150" height="74" src="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/fianzacredito-150x74.png" class="scale-with-grid wp-post-image" alt="Clientes colorama agencia" srcset="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/fianzacredito.png 150w, https://coloramacomunicaciones.com/wp-content/uploads/2018/05/fianzacredito-50x25.png 50w" sizes="(max-width: 150px) 100vw, 150px" />
-                                      </a>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="client_wrapper">
-                                      <a target="_blank" href="http://movilizarcarga.com/" title="Grupo Movilizar">
-                                        <img width="150" height="74" src="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/grupo-movilizar-150x74.png" class="scale-with-grid wp-post-image" alt="Grupo Movilizar Cliente Marketing Colorama" srcset="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/grupo-movilizar.png 150w, https://coloramacomunicaciones.com/wp-content/uploads/2018/05/grupo-movilizar-50x25.png 50w" sizes="(max-width: 150px) 100vw, 150px" />
-                                      </a>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="client_wrapper">
-                                      <a target="_blank" href="http://bang-bangshoes.com/" title="Bang Bang Shoes">
-                                        <img width="150" height="74" src="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/bangbang-150x74.png" class="scale-with-grid wp-post-image" alt="Clientes Colorama Agencia de publicidad" srcset="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/bangbang.png 150w, https://coloramacomunicaciones.com/wp-content/uploads/2018/05/bangbang-50x25.png 50w" sizes="(max-width: 150px) 100vw, 150px" />
-                                      </a>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="client_wrapper">
-                                      <a target="_blank" href="https://rodiziocucuta.com/" title="Rodizio Cúcuta">
-                                        <img width="150" height="74" src="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/rodizio-150x74.png" class="scale-with-grid wp-post-image" alt="Clientes Colorama Agencia" srcset="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/rodizio.png 150w, https://coloramacomunicaciones.com/wp-content/uploads/2018/05/rodizio-50x25.png 50w" sizes="(max-width: 150px) 100vw, 150px" />
-                                      </a>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="client_wrapper">
-                                      <a target="_blank" href="https://caciquecrossfit.com/" title="Crossfit Cacique">
-                                        <img width="150" height="74" src="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/cacique-150x74.png" class="scale-with-grid wp-post-image" alt="Clientes colorama agencia" srcset="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/cacique.png 150w, https://coloramacomunicaciones.com/wp-content/uploads/2018/05/cacique-50x25.png 50w" sizes="(max-width: 150px) 100vw, 150px" />
-                                      </a>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="client_wrapper">
-                                      <img width="150" height="64" src="https://coloramacomunicaciones.com/wp-content/uploads/2018/07/logoUNGRD-150x64.png" class="scale-with-grid wp-post-image" alt="" srcset="https://coloramacomunicaciones.com/wp-content/uploads/2018/07/logoUNGRD-150x64.png 150w, https://coloramacomunicaciones.com/wp-content/uploads/2018/07/logoUNGRD-50x21.png 50w, https://coloramacomunicaciones.com/wp-content/uploads/2018/07/logoUNGRD.png 229w" sizes="(max-width: 150px) 100vw, 150px" />
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="client_wrapper">
-                                      <a target="_blank" href="https://cajaunion.coop" title="Caja Unión">
-                                        <img width="150" height="74" src="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/cajaunion-150x74.png" class="scale-with-grid wp-post-image" alt="Clientes colorama agencia" srcset="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/cajaunion.png 150w, https://coloramacomunicaciones.com/wp-content/uploads/2018/05/cajaunion-50x25.png 50w" sizes="(max-width: 150px) 100vw, 150px" />
-                                      </a>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="client_wrapper">
-                                      <a target="_blank" href="http://uniformesuno.com/" title="Uniformes UNO">
-                                        <img width="150" height="74" src="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/uno-150x74.png" class="scale-with-grid wp-post-image" alt="Clientes colorama agencia" srcset="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/uno.png 150w, https://coloramacomunicaciones.com/wp-content/uploads/2018/05/uno-50x25.png 50w" sizes="(max-width: 150px) 100vw, 150px" />
-                                      </a>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="client_wrapper">
-                                      <a target="_blank" href="https://linascloset.co/" title="Lina&#8217;s Closet">
-                                        <img width="150" height="74" src="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/linasc-150x74.png" class="scale-with-grid wp-post-image" alt="clientes colorama agencia de publicidad" srcset="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/linasc.png 150w, https://coloramacomunicaciones.com/wp-content/uploads/2018/05/linasc-50x25.png 50w" sizes="(max-width: 150px) 100vw, 150px" />
-                                      </a>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div class="client_wrapper">
-                                      <a target="_blank" href="https://monomotors.com.co/" title="Monomotors">
-                                        <img width="150" height="74" src="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/monomotors-150x74.png" class="scale-with-grid wp-post-image" alt="Clientes Colorama Agencia de publicidad" srcset="https://coloramacomunicaciones.com/wp-content/uploads/2018/05/monomotors.png 150w, https://coloramacomunicaciones.com/wp-content/uploads/2018/05/monomotors-50x25.png 50w" sizes="(max-width: 150px) 100vw, 150px" />
-                                      </a>
-                                    </div>
-                                  </li>
-                                </ul>
                               </div>
-                            </ul>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--  -->
-      <div class="section section-page-footer">
-        <div class="section_wrapper clearfix">
-          <div class="column one page-pager">
+                  <div class="vc_row-full-width vc_clearfix">
+                  </div>
+            <!---->
+
           </div>
         </div>
       </div>
     </div>
   </div>
+  
+  <!-- Footer -->
+  <div class="section section-page-footer">
+    <div class="section_wrapper clearfix">
+      <div class="column one page-pager">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 </div>
 </div>
 <footer id="Footer" class="clearfix">
 <div class="footer_action">
-  <div class="container">
-    <div class="column one column_column">
-      57 (7) 5 49 42 14 - +57 320 394 68 15
-      <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3b52555d547b565258545754495a565a15585456">[email&#160;protected]</a>
-      Av.0 # 18-25 Barrio Blanco
-      Cúcuta - Colombia.
-    </div>
-  </div>
+<div class="container">
+<div class="column one column_column">
+  57 (7) 5 49 42 14 - +57 320 394 68 15
+  <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3b52555d547b565258545754495a565a15585456">[email&#160;protected]</a>
+  Av.0 # 18-25 Barrio Blanco
+  Cúcuta - Colombia.
+</div>
+</div>
 </div>
 <div class="footer_copy">
-  <div class="container">
-    <div class="column one">
-      <div class="copyright">
-      2018 © Copyright - Colorama INC </div>
-      <ul class="social">
-        <li class="facebook">
-          <a target="_blank" href="https://www.facebook.com/micolorama" title="Facebook">
-            <i class="icon-facebook">
-            </i>
-          </a>
-        </li>
-        <li class="twitter">
-          <a target="_blank" href="https://twitter.com/micolorama" title="Twitter">
-            <i class="icon-twitter">
-            </i>
-          </a>
-        </li>
-        <li class="youtube">
-          <a target="_blank" href="https://www.youtube.com/channel/UC4GqsVyESLeDlwbKhCa4MhQ" title="YouTube">
-            <i class="icon-play">
-            </i>
-          </a>
-        </li>
-        <li class="linkedin">
-          <a target="_blank" href="https://www.linkedin.com/company/colorama-group" title="LinkedIn">
-            <i class="icon-linkedin">
-            </i>
-          </a>
-        </li>
-        <li class="pinterest">
-          <a target="_blank" href="https://www.pinterest.es/micolorama/?autologin=true" title="Pinterest">
-            <i class="icon-pinterest">
-            </i>
-          </a>
-        </li>
-        <li class="instagram">
-          <a target="_blank" href="https://www.instagram.com/micolorama/" title="Instagram">
-            <i class="icon-instagram">
-            </i>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
+<div class="container">
+<div class="column one">
+  <div class="copyright">
+  2018 © Copyright - Colorama INC </div>
+  <ul class="social">
+    <li class="facebook">
+      <a target="_blank" href="https://www.facebook.com/micolorama" title="Facebook">
+        <i class="icon-facebook">
+        </i>
+      </a>
+    </li>
+    <li class="twitter">
+      <a target="_blank" href="https://twitter.com/micolorama" title="Twitter">
+        <i class="icon-twitter">
+        </i>
+      </a>
+    </li>
+    <li class="youtube">
+      <a target="_blank" href="https://www.youtube.com/channel/UC4GqsVyESLeDlwbKhCa4MhQ" title="YouTube">
+        <i class="icon-play">
+        </i>
+      </a>
+    </li>
+    <li class="linkedin">
+      <a target="_blank" href="https://www.linkedin.com/company/colorama-group" title="LinkedIn">
+        <i class="icon-linkedin">
+        </i>
+      </a>
+    </li>
+    <li class="pinterest">
+      <a target="_blank" href="https://www.pinterest.es/micolorama/?autologin=true" title="Pinterest">
+        <i class="icon-pinterest">
+        </i>
+      </a>
+    </li>
+    <li class="instagram">
+      <a target="_blank" href="https://www.instagram.com/micolorama/" title="Instagram">
+        <i class="icon-instagram">
+        </i>
+      </a>
+    </li>
+  </ul>
+</div>
+</div>
 </div>
 </footer>
 </div>
 <div id="Side_slide" class="right dark hide-button">
 <div class="close-wrapper">
 <a href="#" class="close">
-  <i class="icon-cancel-fine">
-  </i>
+<i class="icon-cancel-fine">
+</i>
 </a>
 </div>
 <div class="extras">
@@ -1156,46 +869,45 @@
 </div>
 <ul class="social">
 <li class="facebook">
-  <a target="_blank" href="https://www.facebook.com/micolorama" title="Facebook">
-    <i class="icon-facebook">
-    </i>
-  </a>
+<a target="_blank" href="https://www.facebook.com/micolorama" title="Facebook">
+<i class="icon-facebook">
+</i>
+</a>
 </li>
 <li class="twitter">
-  <a target="_blank" href="https://twitter.com/micolorama" title="Twitter">
-    <i class="icon-twitter">
-    </i>
-  </a>
+<a target="_blank" href="https://twitter.com/micolorama" title="Twitter">
+<i class="icon-twitter">
+</i>
+</a>
 </li>
 <li class="youtube">
-  <a target="_blank" href="https://www.youtube.com/channel/UC4GqsVyESLeDlwbKhCa4MhQ" title="YouTube">
-    <i class="icon-play">
-    </i>
-  </a>
+<a target="_blank" href="https://www.youtube.com/channel/UC4GqsVyESLeDlwbKhCa4MhQ" title="YouTube">
+<i class="icon-play">
+</i>
+</a>
 </li>
 <li class="linkedin">
-  <a target="_blank" href="https://www.linkedin.com/company/colorama-group" title="LinkedIn">
-    <i class="icon-linkedin">
-    </i>
-  </a>
+<a target="_blank" href="https://www.linkedin.com/company/colorama-group" title="LinkedIn">
+<i class="icon-linkedin">
+</i>
+</a>
 </li>
 <li class="pinterest">
-  <a target="_blank" href="https://www.pinterest.es/micolorama/?autologin=true" title="Pinterest">
-    <i class="icon-pinterest">
-    </i>
-  </a>
+<a target="_blank" href="https://www.pinterest.es/micolorama/?autologin=true" title="Pinterest">
+<i class="icon-pinterest">
+</i>
+</a>
 </li>
 <li class="instagram">
-  <a target="_blank" href="https://www.instagram.com/micolorama/" title="Instagram">
-    <i class="icon-instagram">
-    </i>
-  </a>
+<a target="_blank" href="https://www.instagram.com/micolorama/" title="Instagram">
+<i class="icon-instagram">
+</i>
+</a>
 </li>
 </ul>
 </div>
 <div id="body_overlay">
 </div>
-
 <link rel='stylesheet' id='font-awesome-css' href='https://coloramacomunicaciones.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css?ver=5.1.1' type='text/css' media='all' />
 </body>
 </html>
